@@ -1,0 +1,29 @@
+#add-new-product-form {
+    display: flex;
+    gap: 2rem;
+}
+
+#add-new-product-form .input-container {
+    display: flex;
+    flex-direction: column;
+    margin-bottom: 0.75rem;
+}
+
+#add-new-product-form .input-container:first-child {
+    margin-top: 1rem;
+}
+
+#add-new-product-form .input-container input {
+    width: 10rem;
+}
+
+#add-new-product-form .input-container span {
+    font-size: 0.75rem;
+}
+
+
+#add-new-product-form .buttons {
+    display: flex;
+    gap: 1rem;
+    margin-top: 0.95rem;
+}
