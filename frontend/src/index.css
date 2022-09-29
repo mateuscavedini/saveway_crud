@@ -38,6 +38,7 @@ textarea {
 
 button {
     padding: 0.25rem 0.5rem;
+    cursor: pointer;
 }
 
 .overlay {

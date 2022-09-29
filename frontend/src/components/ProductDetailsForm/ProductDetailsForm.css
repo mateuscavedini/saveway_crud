@@ -1,0 +1,30 @@
+#product-details-form {
+    display: flex;
+    gap: 2rem;
+}
+
+#product-details-form .input-container {
+    display: flex;
+    flex-direction: column;
+    margin-bottom: 0.75rem;
+}
+
+#product-details-form .input-container:first-child {
+    margin-top: 1rem;
+}
+
+#product-details-form .input-container input {
+    width: 10rem;
+    padding: 0.25rem;
+}
+
+#product-details-form .input-container span {
+    font-size: 0.75rem;
+}
+
+
+#product-details-form .buttons {
+    display: flex;
+    gap: 1rem;
+    margin-top: 1.75rem;
+}

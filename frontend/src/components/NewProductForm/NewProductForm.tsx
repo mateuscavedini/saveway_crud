@@ -4,10 +4,10 @@ import "./NewProductForm.css"
 
 export const NewProductForm = () => {
     const [values, setValues] = useState({
-        name: "",
-        price: 0.01,
-        stock: 0,
-        description: ""
+        nameNewProductForm: "",
+        priceNewProductForm: 0.01,
+        stockNewProductForm: 0,
+        descriptionNewProductForm: ""
     })
     
     const handleOnChange = (e: ChangeEvent<HTMLInputElement | HTMLTextAreaElement>): void => {
@@ -28,27 +28,27 @@ export const NewProductForm = () => {
         <form id="add-new-product-form" onSubmit={handleAddProduct} autoComplete="off">
             <div className="column">
                 <div className="input-container">
-                    <label htmlFor="name">Product name</label>
-                    <input name="name" id="name" onChange={handleOnChange} value={values.name} required/>
+                    <label htmlFor="nameNewProductForm">Product name</label>
+                    <input name="nameNewProductForm" id="nameNewProductForm" onChange={handleOnChange} value={values.nameNewProductForm} required/>
                 </div>
 
                 <div className="input-container">
-                    <label htmlFor="price">Unit price</label>
-                    <input name="price" id="price" type="number" min="0.01" step="0.01" onChange={handleOnChange} value={values.price} required/>
+                    <label htmlFor="priceNewProductForm">Unit price</label>
+                    <input name="priceNewProductForm" id="priceNewProductForm" type="number" min="0.01" step="0.01" onChange={handleOnChange} value={values.priceNewProductForm} required/>
                     <span>$USD</span>
                 </div>
 
                 <div className="input-container">
-                    <label htmlFor="stock">Current stock</label>
-                    <input name="stock" id="stock" type="number" min="0" onChange={handleOnChange} value={values.stock} required/>
+                    <label htmlFor="stockNewProductForm">Current stock</label>
+                    <input name="stockNewProductForm" id="stockNewProductForm" type="number" min="0" onChange={handleOnChange} value={values.stockNewProductForm} required/>
                 </div>
 
             </div>
 
             <div className="column">
                 <div className="input-container">
-                    <label htmlFor="description">Description</label>
-                    <textarea name="description" id="description" cols={25} rows={5} onChange={handleOnChange} value={values.description} required></textarea>
+                    <label htmlFor="descriptionNewProductForm">Description</label>
+                    <textarea name="descriptionNewProductForm" id="descriptionNewProductForm" cols={25} rows={5} onChange={handleOnChange} value={values.descriptionNewProductForm} required></textarea>
                 </div>
 
                 <div className="buttons">
