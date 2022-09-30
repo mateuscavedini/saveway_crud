@@ -1,6 +1,6 @@
 import * as Dialog from "@radix-ui/react-dialog"
 import React from "react"
-import { Product } from "./global/types"
+import { Product } from "../global/types"
 import { ProductDetailsForm } from "./ProductDetailsForm/ProductDetailsForm"
 
 export const ProductDetailsModal = React.forwardRef((props: { product: Product }, ref) => {

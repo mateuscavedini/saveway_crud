@@ -2,8 +2,8 @@ import * as Dialog from "@radix-ui/react-dialog"
 import axios from "axios"
 import { useContext } from "react"
 import { ProductsContext } from "../contexts/ProductsContext"
+import { Product } from "../global/types"
 import { convertBooleanToAvailability } from "../utils/convertBooleanToAvailability"
-import { Product } from "./global/types"
 import { ProductDetailsModal } from "./ProductDetailsModal"
 
 export const ProductCard = (props: { product: Product }) => {

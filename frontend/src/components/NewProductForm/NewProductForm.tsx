@@ -2,7 +2,7 @@ import * as Dialog from "@radix-ui/react-dialog"
 import axios from "axios"
 import { ChangeEvent, FormEvent, useContext, useState } from "react"
 import { ProductsContext } from "../../contexts/ProductsContext"
-import { FormNewProduct } from "../global/types"
+import { FormNewProduct } from "../../global/types"
 import "./NewProductForm.css"
 
 export const NewProductForm = () => {
