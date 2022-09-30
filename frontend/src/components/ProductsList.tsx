@@ -18,6 +18,8 @@ export const ProductsList = () => {
             </thead>
 
             <tbody>
+                {!products.length && <td>There is no product to show.</td>}
+                
                 {products.map(product => {
                     return <ProductCard key={product.id} product={product} />
                 })}
