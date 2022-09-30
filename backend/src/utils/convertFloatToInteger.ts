@@ -1,3 +1,3 @@
 export const convertFloatToInteger = (value: number): number => {
-    return value * 100
+    return Math.round(value * 100)
 }
