@@ -41,6 +41,10 @@ button {
     cursor: pointer;
 }
 
+.product-card img {
+    cursor: pointer;
+}
+
 .overlay {
     width: 100%;
     height: 100%;

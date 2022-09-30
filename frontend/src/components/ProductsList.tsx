@@ -1,6 +1,10 @@
+import { useContext } from "react"
+import { ProductsContext } from "../contexts/ProductsContext"
 import { ProductCard } from "./ProductCard"
 
 export const ProductsList = () => {
+    const { products } = useContext(ProductsContext)
+
     return (
         <table id="products-list">
             <thead>
@@ -12,9 +16,11 @@ export const ProductsList = () => {
                     <th scope="col"></th>
                 </tr>
             </thead>
-            
+
             <tbody>
-                <ProductCard />
+                {products.map(product => {
+                    return <ProductCard key={product.id} product={product} />
+                })}
             </tbody>
         </table>
     )

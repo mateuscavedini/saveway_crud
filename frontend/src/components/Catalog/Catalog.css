@@ -8,16 +8,7 @@
 #catalog h1 {
     font-weight: bold;
     font-size: 2rem;
-}
-
-#catalog label {
-    margin: 0.5rem 0 0.25rem 0;
-    font-weight: bold;
-}
-
-#search-input {
-    padding: 0.5rem;
-    margin-bottom: 0.25rem;
+    margin-bottom: 0.5rem;
 }
 
 #add-button {
